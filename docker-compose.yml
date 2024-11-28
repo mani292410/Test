@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  api:
+    build: .
+    ports:
+      - '8080:8080'
+    stdin_open: true
+    tty: true
+    container_name: seo-app-release_0.0.1
+    # extra_hosts:
+    #   - 'gateway.docker.internal:192.168.56.1'
